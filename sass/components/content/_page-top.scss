@@ -1,0 +1,284 @@
+.site-content{
+    padding: 70px 0;
+}
+.l{
+    background: #FFD5E1;
+    &-modal{
+        width: 100%;
+        max-width: 840px;
+        background: #fff;
+        &-inn{
+            position: relative;
+            &-hd{
+                text-align: center;
+                .banner{
+                    padding: 36px 36px 0px;
+                    @include mqSp(){
+                        padding: 36px 15px 0;
+                    }
+                    figure{
+                        img{
+                            width: 690px;
+                            @include mqSp(){
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .close {
+                        position: absolute;
+                        right: 30px;
+                        top: 32px;
+                        width: 32px;
+                        height: 32px;
+                        @include mqSp(){
+                            right: 15px;
+                            top: 10px;
+                            width: 20px;
+                            height: 20px;
+                        }
+                      }
+                      .close:before, .close:after {
+                        position: absolute;
+                        left: 15px;
+                        content: ' ';
+                        height: 33px;
+                        width: 2px;
+                        background-color: #C9A063;
+                      }
+                      .close:before {
+                        transform: rotate(45deg);
+                      }
+                      .close:after {
+                        transform: rotate(-45deg);
+                      }
+  
+                }
+                p{
+                    font-size: 26px;
+                    font-family: 游明朝体, "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+                    letter-spacing: 0.04em;
+                    line-height: 1.3;
+                    padding: 15px 0;
+                    color: #fff;
+                    text-shadow: 3px 3px 6px #ec2369;
+                    @include mqSp(){
+                        font-size: 18px;
+                        line-height: 1.4;
+                    }
+                }
+            }
+            &-content{
+                .modal-content{
+                    padding: 0px 36px;
+                    @include mqSp(){
+                        padding: 0 15px;
+                    }
+                    &-left{
+                        width: 45%;
+                        margin-right: 20px;
+                        @include mqSp(){
+                            width: 100%;
+                            margin-right: 0;
+                        }
+                        .left-item{
+                            a{
+                                figure{
+                                    position: relative;
+                                    img{
+                                        width: 100%;
+                                    }
+                                    h3{
+                                        position: absolute;
+                                        top: 10px;
+                                        left: 10px;
+                                        display: inline-block;
+                                        padding: 7px 20px;
+                                        background-color: #fff;
+                                        font-size: 14px;
+                                        color: #C9A063;
+                                        font-family: 'Montserrat', sans-serif;
+                                        font-weight: 700;
+                                        border: 2px solid #C9A063;
+                                        border-radius: 50px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &-right{
+                        width: 52.3%;
+                        flex-direction: column;
+                        
+                        @include mqSp(){
+                            width: 100%;
+                            margin-top: 20px;
+                        }
+                        .right-items{
+                            margin-bottom: 20px;
+                            @include mqSp(){
+                                display: block;
+                            }
+                            &:last-child{
+                                margin-bottom: 0;
+                            }
+                            a{
+                                figure{
+                                    margin-right: 15px;
+                                    width: 31%;
+                                    @include mqSp(){
+                                        width: 40%;
+                                    }
+                                    img{
+                                        width: 100%;
+                                    }
+                                }
+                                .item-content{
+                                    width: 65%;
+                                    @include mqSp(){
+                                        width: 55%;
+                                    }
+                                    .gender{
+                                        display: inline-block;
+                                        background: #C9A063;
+                                        padding: 5px 20px 5px 5px;
+                                        margin-bottom: 5px;
+                                        font-size: 12px;
+                                        font-family: 'Montserrat', sans-serif;
+                                        font-weight: bold;
+                                        letter-spacing: 0.04em;
+                                        // line-height: 2;
+                                    }
+                                    h3{
+                                        font-size: 16px;
+                                        font-family: 'Montserrat', sans-serif;
+                                        font-weight: bold;
+                                        // line-height: 1.6;
+                                        letter-spacing: 0.04em;
+                                        color: #C9A063;
+                                        border-bottom: 1px solid #C9A063;
+                                    }
+                                    .size{
+                                        padding: 7px 0;
+                                        li{
+                                            font-size: 12px;
+                                            font-family: 'Montserrat', sans-serif;
+                                            font-weight: bold;
+                                            // line-height: 2;
+                                            letter-spacing: 0.04em;
+                                            &:first-child{
+                                                padding-bottom: 5px;
+                                            }
+                                            span{
+                                                &:first-child{
+                                                    width: 100%;
+                                                    max-width: 50px;
+                                                    display: inline-block;
+                                                }
+                                                &:last-child{
+                                                    margin-left: 10px;
+                                                    font-weight: 600;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .price{
+                                        font-size: 14px;
+                                        font-family: 'Montserrat', sans-serif;
+                                        font-weight: bold;
+                                        // line-height: 1.7;
+                                        letter-spacing: 0.04em;
+                                        color: #1B2963;
+                                        .normal-price{
+                                            font-size: 28px;
+                                            font-family: 'Helvetica', sans-serif;
+                                        }
+                                        sub{
+
+                                        }
+                                        .tax-price{
+                                            font-size: 16px;
+                                            font-family: 'Helvetica', sans-serif
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .list-items{
+                        padding-top: 10px;
+                        li{
+                            font-size: 12px;
+                            font-family: 'Montserrat', sans-serif;
+                            font-weight: bold;
+                            line-height: 2;
+                            letter-spacing: 0.04em;
+                            color: #1B2963;
+                            &::before{
+                                content: '※';
+                            }
+                        }
+                    }
+                }
+                .modal-btn{
+                    position: relative;
+                    margin-top: 30px;
+                    padding-bottom: 30px;
+                    &::before{
+                        content: '';
+                        background: url(../assets/img/modalbtnline01.png);
+                        position: absolute;
+                        top: 30%;
+                        left: 4%;
+                        width: 33%;
+                        height: 22px;
+                        transform: translateY(-10px);
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                        @include mqSp(){
+                            background: url(../assets/img/modalbtnline01-sp.png);
+                            width: 50%;
+                            top: 30%;
+                            background-size: 35%;
+                            background-repeat: no-repeat;
+                        }
+                    }
+                    &::after{
+                        content: '';
+                        background: url(../assets/img/modalbtnline02.png);
+                        position: absolute;
+                        top: 30%;
+                        right: 4%;
+                        width: 33%;
+                        height: 22px;
+                        transform: translateY(-10px);
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                        @include mqSp(){
+                            background: url(../assets/img/modalbtnline01-sp.png);
+                            width: 50%;
+                            top: 30%;
+                            background-size: 35%;
+                            background-repeat: no-repeat;
+                            right: -28%;
+                        }
+                    }
+                    a{
+                        font-size: 15px;
+                        font-family: 游明朝体, "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+                        font-weight: 600;
+                        line-height: 1.3;
+                        letter-spacing: 0.04em;
+                        color: #fff;
+                        text-align: center;
+                        background: linear-gradient(90deg, rgba(230,44,111,1) 0%, rgba(228,97,147,1) 50%, rgba(236,35,105,1) 100%);
+                        padding: 15px 0;
+                        display: block;
+                        margin: 0 auto;
+                        width: 200px;
+                        border-radius: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
